@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocol Facility Services | Institutional Contract Management</title>
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0A192F', light: '#112240', tint: '#233554' },
+                        gold: { DEFAULT: '#D4AF37', muted: 'rgba(212, 175, 55, 0.15)', border: 'rgba(212, 175, 55, 0.4)' },
+                        slate: { 950: '#030712' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #030712; color: #F3F4F6; }
+        .mono-text { font-family: 'JetBrains Mono', monospace; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #030712; }
+        ::-webkit-scrollbar-thumb { background: #112240; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- 00. CORPORATE HEADER -->
+    <header class="fixed top-0 left-0 w-full bg-navy/90 backdrop-blur-md border-b-2 border-gold z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="mono-text font-bold text-lg tracking-widest text-white">PROTOCOL</span>
+                <span class="text-xs uppercase bg-gold/10 text-gold border border-gold/30 px-2 py-0.5 rounded tracking-wider font-semibold">Facility Services</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                <a href="#services" class="hover:text-gold transition-colors duration-200">Capabilities</a>
+                <a href="#industries" class="hover:text-gold transition-colors duration-200">Sectors</a>
+                <a href="#protocol" class="hover:text-gold transition-colors duration-200">The System</a>
+                <a href="#why" class="hover:text-gold transition-colors duration-200">Risk Control</a>
+                <a href="#assessment" class="bg-gold text-navy px-4 py-2 rounded font-bold border border-gold hover:bg-transparent hover:text-gold transition-all duration-300">Request Assessment</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 01. INTUITIVE HERO TERMINAL -->
+    <section id="hero" class="min-h-screen pt-32 pb-20 flex items-center justify-center relative px-6 border-b border-gray-800">
+        <div class="absolute inset-0 z-0 bg-[radial-gradient(#112240_1px,transparent_1px)] [background-size:24px_24px] opacity-40"></div>
+        <div class="max-w-4xl w-full text-center relative z-10 space-y-8">
+            <div class="inline-flex items-center space-x-2 bg-navy-light border border-gray-700 px-4 py-1.5 rounded-full text-xs text-gray-400 uppercase tracking-widest">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Central Indiana Logistics Grid Active</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-white uppercase">
+                One Partner.<br class="md:hidden"><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gold"> Every Facility.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-normal leading-relaxed">
+                Commercial infrastructure assets coordinated through a single, accountable relationship desk. Built for logistics hubs and enterprise portfolios.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <a href="#assessment" class="bg-gold text-navy text-sm uppercase font-bold tracking-wider px-8 py-4 rounded shadow-lg shadow-gold/10 border border-gold hover:bg-transparent hover:text-gold transition-all duration-300">
+                    Request a Facility Assessment
+                </a>
+                <a href="#services" class="bg-navy-light text-white text-sm uppercase font-bold tracking-wider px-8 py-4 rounded border border-gray-700 hover:border-gray-500 transition-all duration-300">
+                    Review Matrix Capabilities
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02. SYSTEM PROBLEM STATEMENT -->
+    <section class="py-24 bg-navy-light border-b border-gray-800 px-6 relative">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-5 gap-12 items-center">
+            <div class="md:col-span-2 space-y-4">
+                <div class="mono-text text-xs uppercase text-gold font-bold tracking-widest">Structural Attrition</div>
+                <h2 class="text-3xl font-bold text-white tracking-tight leading-tight">Your Facility Shouldn’t Require a Dozen Phone Calls.</h2>
+            </div>
+            <div class="md:col-span-3 space-y-6 border-l border-gray-800 md:pl-8 text-gray-400 text-base leading-relaxed">
+                <p>
+                    Managing individual sub-vendors separately introduces severe coordination overhead, communication breakdowns, and baseline accountability leaks. 
+                </p>
+                <p class="text-white font-medium">
+                    Protocol unifies isolated maintenance tracks under a permanent quality-assurance framework.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="text-xs font-semibold bg-navy text-gray-300 border border-gray-800 px-3 py-1 rounded">Janitorial</span>
+                    <span class="text-xs font-semibold bg-navy text-gray-300 border border-gray-800 px-3 py-1 rounded">HVAC / Mechanical</span>
+                    <span class="text-xs font-semibold bg-navy text-gray-300 border border-gray-800 px-3 py-1 rounded">Exterior Grids</span>
+                    <span class="text-xs font-semibold bg-navy text-gray-300 border border-gray-800 px-3 py-1 rounded">Emergency Flips</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03. MATRIX CAPABILITIES -->
+    <section id="services" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <div class="mono-text text-xs uppercase text-gold font-bold tracking-widest">Operational Coverage</div>
+            <h2 class="text-4xl font-extrabold text-white tracking-tight">Everything Your Facility Needs.</h2>
+            <p class="text-gray-400">High-velocity, asset-light dispatching structured across four core facility categories.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="bg-navy-light/40 border border-gray-800 p-8 rounded-lg hover:border-gold/30 transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gold/5 flex items-center justify-center border border-gold/20 mb-6 text-gold font-bold text-xs group-hover:bg-gold group-hover:text-navy transition-all duration-300">01</div>
+                <h3 class="text-lg font-bold text-white mb-4">Janitorial & Interior</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>Commercial Cleaning</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>Day Porter Programs</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>Floor & Concrete Care</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>Carpet Extraction</li>
+                </ul>
+            </div>
+            <div class="bg-navy-light/40 border border-gray-800 p-8 rounded-lg hover:border-gold/30 transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gold/5 flex items-center justify-center border border-gold/20 mb-6 text-gold font-bold text-xs group-hover:bg-gold group-hover:text-navy transition-all duration-300">02</div>
+                <h3 class="text-lg font-bold text-white mb-4">Building Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>General Maintenance</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>HVAC Systems</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>Plumbing Support</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-gold rounded-full mr-2"></span>Electrical & Lighting</li>
+                </ul>
+            </div>
+            <div class="bg-navy-light/40 border border-gray-800 p-8 rounded-lg hover:border-gold/30 transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gold/5 flex items-center justify-center border border-gold/20 mb-6 text-gold font-bold text-xs group-hover:bg-gold group-hover:text-navy transition-all duration-300">03</div>
+                <h3 class="text-lg font-bold text-white mb-4">Exterior Infrastructure</h3>
